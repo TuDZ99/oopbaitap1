@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="doF"></p>
+<p id="doK"></p>
+<input id="aovaidai" type="text">
+<button onclick="doi">Doi</button>
+<script>
+    class aothatday {
+        doC
+        constructor(doC) {
+            this.doC = doC
+        }
+        getDoF(){
+            if (this.doC<-273){
+                return -274
+            } else {
+                return 9* this.doC/5+32
+            }
+        }
+        getDoK(){
+            if (this.doC<-273){
+                return -5
+            } else {
+                return this.doC + 273.15
+            }
+        }
+    }
+    //let doC = new aothatday(25)
+    function doi() {
+        let doC = document.getElementById('doC').value;
+        let doi = new aothatday(doC);
+        let doF = doi.getDoF();
+        if (doF == -500){
+            document.getElementById('doF').innerText = 'khong thoa man'
+        } else {
+            document.getElementById('doF').innerText = 'do F la :' + doF
+        }
+        let doK = doi.getDoK()
+        if(doK==-5){
+            document.getElementById('dok').innerText = 'khong thoa man'
+        } else {
+            document.getElementById('dok').innerText = 'thoa man' + doK
+        }
+    }
+</script>
+</body>
+</html>

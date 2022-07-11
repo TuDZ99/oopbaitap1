@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="bat1" onclick="chuyenNut()">ON</button>
+<textarea style="width: 300px;height: 300px"></textarea>
+<hr>
+<button id="bat2" onclick="chuyenNut()">ON</button>
+<textarea style="width: 300px;height: 300px"></textarea>
+<script>
+    let status1 = true
+    let status2 = false
+    function chuyenNut(id) {
+        console.log(id)
+        let on = document.getElementById('bat1');
+        if (id = 'bat1') {
+            status1 = !status1
+            if (status1) {
+                document.getElementById(id).innerHTML = 'ON'
+            } else {
+                document.getElementById(id).innerHTML = 'OFF'
+            }
+        } else {
+            status2 = !status2
+            if (status2) {
+                document.getElementById(id).innerHTML = 'ON'
+            } else {
+                document.getElementById(id).innerHTML = 'OFF'
+            }
+        }
+    }
+</script>
+</body>
+</html>
